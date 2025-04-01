@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "projects": "Projects",
+    "skills": "Technologies",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Hi, I'm Ricardo",
+    "description1": "A passionate developer",
+    "description2": "An animal lover",
+    "description3": "A fullstack developer"
+  },
+  "about": {
+    "objective": "My goal is to continue developing as a programmer, facing technical challenges and making a meaningful contribution to the projects I participate in. I am motivated to learn from each experience and constantly improve, always bringing my creativity to find useful and effective solutions."
+  }
+}

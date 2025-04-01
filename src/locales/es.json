@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "projects": "Proyectos",
+    "skills": "Tecnologías",
+    "about": "Sobre mí"
+  },
+  "hero": {
+    "title": "¡Hola! soy Ricardo",
+    "description1": "Un desarrollador apasionado.",
+    "description2": "Un amante de los animales",
+    "description3": "Un desarrollador fullstack"
+  },
+  "about": {
+    "objective": "Mi objetivo es seguir desarrollándome como programador, enfrentando desafíos técnicos y contribuyendo de manera significativa a los proyectos en los que participe. Me motiva aprender de cada experiencia y mejorar constantemente, siempre aportando mi creatividad para encontrar soluciones útiles y efectivas."
+  }
+}
