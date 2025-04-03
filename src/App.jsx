@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero"
 function App() {
 
   return (
-    <div className="flex items-center flex-col bg-black">
+    <div className="flex items-center flex-col bg-[#27a3a9]">
       <Navbar />
       <Hero/>
     </div>

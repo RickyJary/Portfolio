@@ -5,11 +5,19 @@
     "about": "Sobre mí"
   },
   "hero": {
-    "title": "¡Hola! soy Ricardo",
-    "description1": "Un desarrollador apasionado.",
-    "description2": "Un amante de los animales",
-    "description3": "Un desarrollador fullstack"
-  },
+  "title": "¡Hola! Soy ",
+  "iam": "Soy ",
+  "description1": "desarrollador fullstack",
+  "description2": "autodidacta",
+  "description3": "creativo",
+  "description4": "resolutivo",
+  "description5": "curioso",
+  "description6": "fan de los retos",
+  "description7": "aprendiz constante",
+  "description8": "jugador",
+  "description9": "de trabajo en equipo",
+  "description10": "buena persona"
+},
   "about": {
     "objective": "Mi objetivo es seguir desarrollándome como programador, enfrentando desafíos técnicos y contribuyendo de manera significativa a los proyectos en los que participe. Me motiva aprender de cada experiencia y mejorar constantemente, siempre aportando mi creatividad para encontrar soluciones útiles y efectivas."
   }
