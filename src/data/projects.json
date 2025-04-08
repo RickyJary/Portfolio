@@ -1,0 +1,20 @@
+[
+  {
+    "key": "tournamentforge",
+    "title": "TournamentForge",
+    "descriptionKey": "projects.tournamentforge.description",
+    "image": "tournamentforge",
+    "technologies": ["JavaScript", "NodeJS", "ExpressJS", "MongoDB", "bootstrap"],
+    "github": "https://github.com/IronTournaments/TournamentForge",
+    "demo": "https://tournamentforge.fly.dev/"
+  },
+  {
+    "key": "ironhacklaga",
+    "title": "IronHacklaga",
+    "descriptionKey": "projects.ironhacklaga.description",
+    "image": "ironhacklaga",
+    "technologies": ["JavaScript", "HTML", "CSS"],
+    "github": "https://github.com/RickyJary/IronHacklaga",
+    "demo": "https://ironhacklaga.netlify.app/"
+  }
+]

@@ -20,5 +20,14 @@
 },
   "about": {
     "objective": "Mi objetivo es seguir desarrollándome como programador, enfrentando desafíos técnicos y contribuyendo de manera significativa a los proyectos en los que participe. Me motiva aprender de cada experiencia y mejorar constantemente, siempre aportando mi creatividad para encontrar soluciones útiles y efectivas."
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "ironhacklaga": {
+      "description": "Space shooter estilo retro inspirado en Galaga. Hecho con JavaScript vanilla y DOM."
+    },
+    "tournamentforge": {
+      "description": "Una aplicación web para gestionar torneos, hecha con Node.js."
+    }
   }
 }

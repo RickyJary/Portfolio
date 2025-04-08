@@ -1,23 +1,33 @@
 /* eslint-disable no-unused-vars */
 import { Github, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "../../context/LanguageContext";
+import rawProjects from "../../data/projects.json";
 import ironhacklaga from "../../assets/img/IronHacklaga.png";
+import tournamentforge from "../../assets/img/TournamentForge.png";
 
-const projects = [
-  {
-    title: "IronHacklaga",
-    description: "Space shooter estilo retro inspirado en Galaga. Hecho con JavaScript vanilla y DOM.",
-    image: ironhacklaga,
-    technologies: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/tuusuario/hacklaga",
-    demo: "https://tuusuario.github.io/hacklaga",
-  },
-];
+const images = {
+  ironhacklaga,
+  tournamentforge,
+};
+
+const projects = rawProjects.map((p) => ({
+  ...p,
+  image: images[p.image],
+}));
 
 const ProjectSection = () => {
+  const { t } = useLanguage();
+
   return (
-    <section className="py-20 px-6 md:px-12 bg-gray-50 space-y-16" id="projects">
-      <h2 className="text-3xl font-bold text-center mb-10">Mis Proyectos</h2>
+    <section
+      className="flex flex-col items-center justify-between py-20 px-10 my-10 rounded-2xl bg-white/80 dark:bg-black/40 backdrop-blur-md shadow-lg shadow-gray-300 dark:shadow-black/40 gap-10 w-full max-w-5xl mx-auto"
+
+      id="projects"
+    >
+      <h2 className="text-3xl font-bold text-center mb-10 opacity-100">
+        {t("projects.title")}
+      </h2>
 
       {projects.map((project, index) => (
         <motion.div
@@ -38,9 +48,9 @@ const ProjectSection = () => {
           <div className="absolute bottom-4 left-4 text-white text-2xl font-bold z-10">
             {project.title}
           </div>
-          
+
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 backdrop-blur-sm z-20">
-            <p className="mb-4 text-sm">{project.description}</p>
+            <p className="mb-4 text-sm">{t(project.descriptionKey)}</p>
             <div className="flex flex-wrap gap-2 text-xs mb-4">
               {project.technologies.map((tech, i) => (
                 <span key={i} className="bg-blue-500 px-2 py-1 rounded">
@@ -48,13 +58,13 @@ const ProjectSection = () => {
                 </span>
               ))}
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-col w-full justify-center items-center lg:flex-row">
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition"
+                  className="flex items-center justify-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition text-center w-full lg:w-auto"
                 >
                   <Github className="w-4 h-4" />
                   GitHub
@@ -65,7 +75,7 @@ const ProjectSection = () => {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition"
+                  className="flex items-center justify-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition text-center w-full lg:w-auto"
                 >
                   <ExternalLink className="w-4 h-4" />
                   Demo
