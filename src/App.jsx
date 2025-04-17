@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar/Navbar"
 import Hero from "./components/Hero/Hero"
-import ProjectsSection from "./components/ProjectSection/ProjectSecion"
+import ProjectsSection from "./components/ProjectSection/ProjectSection"
 
 function App() {
 

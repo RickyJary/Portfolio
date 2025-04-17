@@ -18,16 +18,18 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 flex justify-between items-center p-4 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-white/30 dark:bg-black/30 backdrop-blur-md text-[#27a3a9]"
-          : "bg-[#27a3a9] text-white"
-      }`}
+  scrolled
+    ? "bg-white/30 dark:bg-black/30 backdrop-blur-md text-[#27a3a9] dark:text-[#b2f5f7]"
+    : "bg-[#27a3a9] text-white"
+}`}
+
+
     >
       <ul className="flex gap-8 justify-center flex-1">
   <li>
     <a
       href="#projects"
-      className="hover:underline underline-offset-4 transition-all"
+      className="hover:underline underline-offset-4 transition-all font-semibold"
     >
       {t("navbar.projects")}
     </a>
@@ -35,7 +37,7 @@ const Navbar = () => {
   <li>
     <a
       href="#skills"
-      className="hover:underline underline-offset-4 transition-all"
+      className="hover:underline underline-offset-4 transition-all font-semibold"
     >
       {t("navbar.skills")}
     </a>
@@ -43,7 +45,7 @@ const Navbar = () => {
   <li>
     <a
       href="#about"
-      className="hover:underline underline-offset-4 transition-all"
+      className="hover:underline underline-offset-4 transition-all font-semibold"
     >
       {t("navbar.about")}
     </a>

@@ -21,11 +21,11 @@ const ProjectSection = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-between py-20 px-10 my-10 rounded-2xl bg-white/80 dark:bg-black/40 backdrop-blur-md shadow-lg shadow-gray-300 dark:shadow-black/40 gap-10 w-full max-w-5xl mx-auto"
+      className="flex flex-col items-center justify-between py-20 px-10 my-10 rounded-2xl bg-white/90 dark:bg-black/40 backdrop-blur-md shadow-lg shadow-gray-300 dark:shadow-black/40 gap-10 w-full max-w-5xl mx-auto"
 
       id="projects"
     >
-      <h2 className="text-3xl font-bold text-center mb-10 opacity-100">
+      <h2 className="text-3xl font-bold text-center mb-10 opacity-100 text-[#27a3a9]">
         {t("projects.title")}
       </h2>
 
@@ -43,7 +43,7 @@ const ProjectSection = () => {
             alt={project.title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-500"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-60 transition duration-500"></div>
 
           <div className="absolute bottom-4 left-4 text-white text-2xl font-bold z-10">
             {project.title}
