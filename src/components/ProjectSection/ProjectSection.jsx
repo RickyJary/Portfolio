@@ -51,18 +51,20 @@ const ProjectSection = () => {
             {project.title}
           </div>
 
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 backdrop-blur-sm z-20">
+          <div className="absolute inset-0 flex flex-col items-center lg:justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 backdrop-blur-sm z-20 overflow-y-auto">
+
           <h2 className="text-xl font-semibold tracking-wide drop-shadow-md mb-2">
   {project.title}
 </h2>
             <p className="mb-4 text-sm">{t(project.descriptionKey)}</p>
-            <div className="flex flex-wrap gap-2 text-xs mb-4">
-              {project.technologies.map((tech, i) => (
-                <span key={i} className="bg-blue-500 px-2 py-1 rounded">
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <div className="flex flex-wrap justify-center gap-2 text-xs mb-4">
+  {project.technologies.map((tech, i) => (
+    <span key={i} className="bg-blue-500 px-2 py-1 rounded">
+      {tech}
+    </span>
+  ))}
+</div>
+
             <div className="flex gap-3 flex-col w-full justify-center items-center lg:flex-row">
             {project.github && (
   <a

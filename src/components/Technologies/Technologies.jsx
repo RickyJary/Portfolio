@@ -40,11 +40,13 @@ const Technologies = () => {
       </h2>
 
       <div className="flex flex-col gap-10">
-        <div className="flex justify-center gap-10 flex-wrap">
+      <div className="flex justify-center gap-6 flex-nowrap px-2">
+
           {firstRow.map((tech, index) => (
             <div
               key={index}
-              className="text-5xl sm:text-6xl transition-transform duration-300 transform hover:scale-125"
+              className="text-[clamp(2rem,6vw,3.5rem)] lg:text-6xl lg:mx-6 transition-transform duration-300 transform hover:scale-110 shrink-0"
+
               title={tech.name}
             >
               {tech.icon}
@@ -52,11 +54,11 @@ const Technologies = () => {
           ))}
         </div>
 
-        <div className="flex justify-center gap-10 flex-wrap">
+        <div className="flex justify-center gap-6 flex-nowrap px-2">
           {secondRow.map((tech, index) => (
             <div
               key={index}
-              className="text-5xl sm:text-6xl transition-transform duration-300 transform hover:scale-125"
+              className="text-[clamp(2rem,6vw,3.5rem)] lg:text-6xl lg:mx-6 transition-transform duration-300 transform hover:scale-110 shrink-0"
               title={tech.name}
             >
               {tech.icon}
