@@ -1,10 +1,33 @@
 [
   {
+    "key": "gigboard",
+    "title": "GigBoard",
+    "descriptionKey": "projects.gigboard.description",
+    "image": "gigboard",
+    "technologies": [
+      "JavaScript",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "ReactJS",
+      "TailwindCSS"
+    ],
+    "github": "https://github.com/GigBoardIronhack/GigBoard",
+    "githubAPI": "https://github.com/GigBoardIronhack/GigBoardAPI",
+    "demo": "https://gig-board-lz4a.vercel.app/"
+  },
+  {
     "key": "tournamentforge",
     "title": "TournamentForge",
     "descriptionKey": "projects.tournamentforge.description",
     "image": "tournamentforge",
-    "technologies": ["JavaScript", "NodeJS", "ExpressJS", "MongoDB", "bootstrap"],
+    "technologies": [
+      "JavaScript",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Bootstrap"
+    ],
     "github": "https://github.com/IronTournaments/TournamentForge",
     "demo": "https://tournamentforge.fly.dev/"
   },

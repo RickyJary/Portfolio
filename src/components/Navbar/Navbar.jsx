@@ -17,56 +17,57 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 flex justify-between items-center p-4 w-full transition-all duration-300 ${
-  scrolled
-    ? "bg-white/30 dark:bg-black/30 backdrop-blur-md text-[#27a3a9] dark:text-[#b2f5f7]"
-    : "bg-[#27a3a9] text-white"
-}`}
-
-
-    >
-      <ul className="flex gap-8 justify-center flex-1">
+  className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+    scrolled
+      ? "bg-white/30 dark:bg-black/30 backdrop-blur-md text-[#27a3a9] dark:text-[#b2f5f7]"
+      : "bg-[#27a3a9] text-white"
+  }`}
+>
+  <div className="max-w-5xl mx-auto flex justify-between items-center p-4">
+    <ul className="flex gap-8 justify-center lg:justify-around flex-1">
+    <li>
+  <button
+    onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+    className="hover:underline underline-offset-4 transition-all font-semibold bg-transparent"
+  >
+    {t("navbar.projects")}
+  </button>
+</li>
   <li>
-    <a
-      href="#projects"
-      className="hover:underline underline-offset-4 transition-all font-semibold"
-    >
-      {t("navbar.projects")}
-    </a>
-  </li>
-  <li>
-    <a
-      href="#skills"
-      className="hover:underline underline-offset-4 transition-all font-semibold"
-    >
-      {t("navbar.skills")}
-    </a>
-  </li>
-  <li>
-    <a
-      href="#about"
-      className="hover:underline underline-offset-4 transition-all font-semibold"
-    >
-      {t("navbar.about")}
-    </a>
-  </li>
-</ul>
+  <button
+    onClick={() => document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })}
+    className="hover:underline underline-offset-4 transition-all font-semibold bg-transparent"
+  >
+    {t("navbar.skills")}
+  </button>
+</li>
 
-      <div className="flex items-center gap-2">
-        <img
-          src={unitedKingdom}
-          alt="English"
-          className="w-8 h-6 cursor-pointer"
-          onClick={() => lang !== "en" && toggleLanguage()}
-        />
-        <img
-          src={spain}
-          alt="Spanish"
-          className="w-8 h-6 cursor-pointer"
-          onClick={() => lang !== "es" && toggleLanguage()}
-        />
-      </div>
-    </nav>
+<li>
+  <button
+    onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+    className="hover:underline underline-offset-4 transition-all font-semibold bg-transparent"
+  >
+    {t("navbar.about")}
+  </button>
+</li>
+    </ul>
+
+    <div className="flex items-center gap-2">
+      <img
+        src={unitedKingdom}
+        alt="English"
+        className="w-8 h-6 cursor-pointer"
+        onClick={() => lang !== "en" && toggleLanguage()}
+      />
+      <img
+        src={spain}
+        alt="Spanish"
+        className="w-8 h-6 cursor-pointer"
+        onClick={() => lang !== "es" && toggleLanguage()}
+      />
+    </div>
+  </div>
+</nav>
   );
 };
 

@@ -5,30 +5,47 @@
     "about": "Sobre mí"
   },
   "hero": {
-  "title": "¡Hola! Soy ",
-  "iam": "Soy ",
-  "description1": "desarrollador fullstack",
-  "description2": "autodidacta",
-  "description3": "creativo",
-  "description4": "resolutivo",
-  "description5": "curioso",
-  "description6": "fan de los retos",
-  "description7": "aprendiz constante",
-  "description8": "jugador",
-  "description9": "de trabajo en equipo",
-  "description10": "buena persona",
-  "download": "DESCARGA MI CV!"
-},
+    "title": "¡Hola! Soy ",
+    "iam": "Soy ",
+    "description1": "desarrollador fullstack",
+    "description2": "autodidacta",
+    "description3": "creativo",
+    "description4": "resolutivo",
+    "description5": "curioso",
+    "description6": "fan de los retos",
+    "description7": "aprendiz constante",
+    "description8": "jugador",
+    "description9": "de trabajo en equipo",
+    "description10": "buena persona",
+    "download": "DESCARGA MI CV!"
+  },
   "about": {
     "objective": "Mi objetivo es seguir desarrollándome como programador, enfrentando desafíos técnicos y contribuyendo de manera significativa a los proyectos en los que participe. Me motiva aprender de cada experiencia y mejorar constantemente, siempre aportando mi creatividad para encontrar soluciones útiles y efectivas."
   },
   "projects": {
     "title": "Mis Proyectos",
+
+    "gigboard": {
+      "description": "GigBoard es una plataforma profesional para buscar, crear y gestionar conciertos. Cuenta con dos tipos de perfiles: agencias y promotores. Las agencias representan a artistas musicales, y los promotores pueden contratarlos para sus eventos a través de la plataforma. Incluye perfiles personalizados, sistema de contratación, creación de eventos y una API propia robusta. Además, se integran APIs externas como Spotify y YouTube para mostrar música, videoclips y datos enriquecidos, ofreciendo una experiencia dinámica y completa."
+    },
+
     "ironhacklaga": {
       "description": "Space shooter estilo retro inspirado en Galaga. Hecho con JavaScript vanilla y DOM."
     },
     "tournamentforge": {
       "description": "Una aplicación web para gestionar torneos, hecha con Node.js."
     }
-  }
+  },
+  "technologies": {
+    "title": "Tecnologías"
+  },
+  "aboutsection": {
+  "title": "Sobre mí",
+  "objective": "Mi objetivo es seguir desarrollándome como programador, enfrentando desafíos técnicos y contribuyendo de manera significativa a los proyectos en los que participe. Me motiva aprender de cada experiencia y mejorar constantemente, siempre aportando mi creatividad para encontrar soluciones útiles y efectivas.",
+  "paragraph1": "Me apasiona especialmente crear aplicaciones que combinen diseño y lógica de forma significativa. Disfruto de entornos donde las ideas fluyen, la colaboración es natural y el aprendizaje forma parte del día a día. Ya sea depurando un error complicado o puliendo una interfaz, encuentro satisfacción tanto en los detalles como en el conjunto.",
+  "paragraph2": "Creo que la tecnología debe estar al servicio de las personas, y aspiro a contribuir a productos digitales que realmente mejoren la forma en la que vivimos, nos comunicamos o resolvemos problemas. Siempre estoy dispuesto a explorar nuevas herramientas y metodologías, y no temo salir de mi zona de confort cuando el proyecto lo exige.",
+  "paragraph3": "Actualmente, busco seguir creciendo profesionalmente, aportar valor a equipos dinámicos y seguir sorprendiendo con ideas que unan lo técnico con lo humano.",
+  "connect": "¡Conectemos!"
+}
+
 }

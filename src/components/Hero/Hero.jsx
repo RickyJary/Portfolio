@@ -9,7 +9,7 @@ const Hero = () => {
   const { t, lang } = useLanguage();
 
   return (
-    <section className="flex flex-col sm:flex-row items-center lg:items-end justify-between py-20 px-10 bg-white/90 dark:bg-black/40 backdrop-blur-md shadow-lg shadow-gray-300 dark:shadow-black/40 gap-12 rounded-2xl w-full max-w-5xl mx-auto">
+    <section className="flex flex-col sm:flex-row items-center lg:items-end justify-between py-20 px-10 bg-white/90 backdrop-blur-md shadow-lg shadow-gray-300  gap-12 rounded-2xl w-full max-w-5xl mx-auto">
 
       <div className="flex flex-col items-center">
         <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg ring-4 ring-[#27a3a9] ring-opacity-50 transition duration-500 hover:scale-105">
@@ -48,12 +48,12 @@ const Hero = () => {
       </div>
 
       <div className="sm:w-2/3 text-center sm:text-left max-w-3xl space-y-6">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 dark:text-white leading-tight">
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
           {t("hero.title")}{" "}
           <span className="text-[#27a3a9] font-bold">Ricardo</span>
         </h1>
 
-        <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
+        <p className="text-xl sm:text-2xl text-gray-600  leading-relaxed">
           {t("hero.iam")}{" "}
           <ReactTyped
             className="text-[#27a3a9] font-bold"
@@ -77,7 +77,7 @@ const Hero = () => {
           />
         </p>
 
-        <p className="text-base sm:text-lg text-gray-700 dark:text-gray-400">
+        <p className="text-base sm:text-lg text-gray-700 ">
           {t("about.objective")}
         </p>
 

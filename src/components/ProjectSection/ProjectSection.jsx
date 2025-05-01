@@ -5,10 +5,12 @@ import { useLanguage } from "../../context/LanguageContext";
 import rawProjects from "../../data/projects.json";
 import ironhacklaga from "../../assets/img/IronHacklaga.png";
 import tournamentforge from "../../assets/img/TournamentForge.png";
+import gigboard from "../../assets/img/GigBoard.png";
 
 const images = {
   ironhacklaga,
   tournamentforge,
+  gigboard,
 };
 
 const projects = rawProjects.map((p) => ({
@@ -21,11 +23,11 @@ const ProjectSection = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-between py-20 px-10 my-10 rounded-2xl bg-white/90 dark:bg-black/40 backdrop-blur-md shadow-lg shadow-gray-300 dark:shadow-black/40 gap-10 w-full max-w-5xl mx-auto"
+      className="flex flex-col items-center justify-between py-20 px-10 my-10 rounded-2xl bg-white/90 backdrop-blur-md shadow-lg shadow-gray-300 gap-10 w-full max-w-5xl mx-auto"
 
       id="projects"
     >
-      <h2 className="text-3xl font-bold text-center mb-10 opacity-100 text-[#27a3a9]">
+      <h2 className="text-5xl font-bold text-center mb-10 opacity-100 text-[#27a3a9]">
         {t("projects.title")}
       </h2>
 
@@ -50,6 +52,9 @@ const ProjectSection = () => {
           </div>
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 backdrop-blur-sm z-20">
+          <h2 className="text-xl font-semibold tracking-wide drop-shadow-md mb-2">
+  {project.title}
+</h2>
             <p className="mb-4 text-sm">{t(project.descriptionKey)}</p>
             <div className="flex flex-wrap gap-2 text-xs mb-4">
               {project.technologies.map((tech, i) => (
@@ -59,17 +64,29 @@ const ProjectSection = () => {
               ))}
             </div>
             <div className="flex gap-3 flex-col w-full justify-center items-center lg:flex-row">
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition text-center w-full lg:w-auto"
-                >
-                  <Github className="w-4 h-4" />
-                  GitHub
-                </a>
-              )}
+            {project.github && (
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition text-center w-full lg:w-auto"
+  >
+    <Github className="w-4 h-4" />
+    GitHub
+  </a>
+)}
+
+{project.githubAPI && (
+  <a
+    href={project.githubAPI}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-1 border px-3 py-1 rounded hover:bg-white hover:text-black transition text-center w-full lg:w-auto"
+  >
+    <Github className="w-4 h-4" />
+    API
+  </a>
+)}
               {project.demo && (
                 <a
                   href={project.demo}

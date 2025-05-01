@@ -24,11 +24,27 @@
   },
   "projects": {
     "title": "My Projects",
+    "gigboard": {
+    "description": "GigBoard is a professional platform to search, create, and manage gigs. It features two types of user profiles: agencies and promoters. Agencies represent musical artists, and promoters can book them for events through the platform. It includes custom profiles, a booking system, event creation tools, and a solid custom-built API. External APIs like Spotify and YouTube are also integrated to display music, videos, and enriched artist data, providing a dynamic and complete user experience."
+  },
     "ironhacklaga": {
       "description": "Retro-style space shooter inspired by Galaga. Built with vanilla JavaScript and the DOM."
     },
     "tournamentforge": {
       "description": "A web application for managing tournaments, built with Node.js."
     }
-  }
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "aboutsection": {
+  "title": "About Me",
+  "objective": "My goal is to continue developing as a programmer, facing technical challenges and making a meaningful contribution to the projects I participate in. I am motivated to learn from each experience and constantly improve, always bringing my creativity to find useful and effective solutions.",
+  "paragraph1": "I'm especially passionate about building applications that blend design and logic in a meaningful way. I enjoy environments where ideas flow freely, collaboration is natural, and learning is part of the everyday process. Whether it's debugging a tough issue or polishing a user interface, I find joy in the details and in the bigger picture.",
+  "paragraph2": "I believe that technology should serve people, and I aspire to contribute to digital products that truly improve the way we live, communicate, or solve problems. I'm always eager to explore new tools and methodologies, and I'm not afraid to step out of my comfort zone when the project demands it.",
+  "paragraph3": "I'm currently looking to continue growing professionally, contribute to dynamic teams, and keep surprising myself with ideas that blend the technical with the human side of development.",
+  "connect": "Let’s connect!"
+}
+
+
 }
