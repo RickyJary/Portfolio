@@ -12,7 +12,7 @@ const About = () => {
       <h2 className="text-4xl font-bold text-center text-[#27a3a9]">
         {t("aboutsection.title")}
       </h2>
-      <div className="text-center max-w-3xl text-gray-700 dark:text-gray-200 leading-relaxed space-y-6">
+      <div className="text-center max-w-3xl text-gray-700 leading-relaxed space-y-6">
         <p>{t("aboutsection.paragraph1")}</p>
         <p>{t("aboutsection.paragraph2")}</p>
         <p>{t("aboutsection.paragraph3")}</p>
