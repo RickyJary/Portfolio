@@ -38,7 +38,7 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="mailto:tuemail@correo.com"
+              href="mailto:ricardogarciajarillo@gmail.com"
               className="hover:text-[#1f8b8f] transition-transform duration-300 transform hover:scale-125"
             >
               <FaEnvelope />
